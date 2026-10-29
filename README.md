@@ -16,7 +16,7 @@ ros2 launch bouncing_ball_catcher game.launch.py
 ini akan menjalankan gamenya namun masih belum tertampil di layar.
 
 Di terminal 2 jalankan command ini untuk menampilkannya :
-
+s
 ros2 run rqt_image_view rqt_image_view
 
 seharusnya akan muncul webcam yang kita gunakan disertai dengan label score yang dimulai dari 0. Kemudian terdapat sejumlah bola yang bergerak random memantul memantul dinding layar.
@@ -50,6 +50,22 @@ game_node:
     ball_radius: 40
     ball_speed: 150.0
 
+    
 ## KEPUTUSAN DESAIN
+Sumber gambar didapat melalui webcam daripada menggunakan file video karena lebih interaktif.
 
-##KENDALA
+Pemilihan objek berwarna hijau muda untuk mendeteksi objek
+
+timer dua detik saat centroid objek masuk ke dalam radius bola menggunakan visual garis yang mengelilingi keliling bola dengan warna kuning.
+
+## KENDALA
+
+Tidak terlalu memahami cara kerja node, topic dan sebagainya. Solusinya dengan membaca ulang modul yang diberikan
+
+Tidak hafal dan terbiasa dengan syntax OpenCV dan rlcpp. Solusinya mempelajari syntax lewat internet dan AI kemudian menerapkannya
+
+VM terlalu berat untuk menjalankan webcam yang berkahir patah - patah. Solusinya menurunkan resolusi saat game dijalankan.
+
+## BONUS
+Tidak ada karena untuk keseluruhan projek masih perlu didalami lagi (belajar lagi) sebelum ditambahkan fitur lainnya.
+

@@ -1,0 +1,17 @@
+camera_node:
+  ros__parameters:
+    # source: "/home/ihsan/Videos/tes3.mp4"
+    source: "0"
+    fps: 10.0
+    width: 320
+    height: 240
+
+game_node:
+  ros__parameters:
+    hsv_lower: [38, 130, 100]
+    hsv_upper: [75, 255, 255]
+    min_area: 300
+    num_balls: 3
+    hold_duration: 2.0
+    ball_radius: 40
+    ball_speed: 40.0
